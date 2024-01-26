@@ -1,10 +1,114 @@
-{"intents":  [
-    {"tag": "greetings",
-    "pattern": ["hello", "hey", "hi", "good day", "Greetings", "what's up", "how is it going?"],
-    "reponses": ["hello", "hey", "what can i do for you"]
-    },
-    {"tag": "goodbye",
-    "pattern": ["bye", "bye bye", "cya later", "goodbye"],
-    "reponses": ["goodbye", "sad to see you go", "Bye Bye"]
-    }
-]}
+{
+    "intents": [
+      {
+        "tag": "greetings",
+        "patterns": ["hi", "hello", "hey"],
+        "responses": ["Hello! How can I help you?", "Hi there! What can I do for you today?", "Hey! What's up?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["bye", "goodbye", "see you"],
+        "responses": ["Goodbye! Have a great day.", "See you later! Take care.", "Farewell! Come back soon."]
+      },
+      {
+        "tag": "age",
+        "patterns": ["How old are you?", "What's your age?"],
+        "responses": ["I'm just a computer program, so I don't have an age.", "Age is just a number for me!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["thank you", "thanks", "thanks a lot"],
+        "responses": ["You're welcome! Happy to help.", "No problem! If you have more questions, feel free to ask.", "Glad I could assist you."]
+      },
+      {
+        "tag": "weather",
+        "patterns": ["What's the weather like today?", "How's the weather?", "Tell me about the weather."],
+        "responses": ["I'm sorry, I don't have real-time weather information.", "You might want to check a weather website or app for the latest updates."]
+      },
+      {
+        "tag": "jokes",
+        "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
+        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "What did one ocean say to the other ocean? Nothing, they just waved."]
+      },
+      {
+        "tag": "name",
+        "patterns": ["What's your name?", "Do you have a name?", "Tell me your name"],
+        "responses": ["I'm just a chatbot, so I don't have a personal name.", "You can call me Chatbot."]
+      },
+      {
+        "tag": "favorite_color",
+        "patterns": ["What's your favorite color?", "Do you like any color?", "Tell me about your favorite color"],
+        "responses": ["I don't have a favorite color, but I think all colors are great!", "Colors are fascinating, but I don't have preferences."]
+      },
+      {
+        "tag": "hobbies",
+        "patterns": ["What are your hobbies?", "Do you have any hobbies?", "Tell me about your hobbies"],
+        "responses": ["I don't have hobbies, but I enjoy chatting with you!", "My main hobby is helping you with information."]
+      },
+      {
+        "tag": "music",
+        "patterns": ["What music do you like?", "Any favorite music?", "Tell me about your music taste"],
+        "responses": ["I don't have personal preferences in music, but I can help you find some great tunes!", "Music is subjective, and I'm here to assist you.", "I sometimes listen to classic music"]
+      },
+      {
+        "tag": "movies",
+        "patterns": ["Favorite movies", "Any favorite films?", "Tell me about your favorite movies"],
+        "responses": ["I don't watch movies, but I can recommend some based on your preferences!", "Movies are a great form of entertainment. What genres do you enjoy?"]
+      },
+      {
+        "tag": "book_recommendation",
+        "patterns": ["Can you recommend a book?", "Any good books to read?", "Tell me about a book recommendation"],
+        "responses": ["Sure! What genre are you interested in? I can recommend a book based on that.", "Books are wonderful! Let me know your interests, and I'll suggest a great read."]
+      },
+      {
+        "tag": "coding",
+        "patterns": ["Do you code?", "Any coding skills?", "Tell me about your coding abilities"],
+        "responses": ["I don't code, but I can help you with coding-related questions!", "Coding is fascinating. How can I assist you with coding today?"]
+      },
+      {
+        "tag": "inspiration",
+        "patterns": ["I need inspiration", "Inspire me", "Tell me something inspiring"],
+        "responses": ["You are capable of amazing things. Believe in yourself!", "Every small step you take brings you closer to your goals. Keep going!"]
+      },
+      {
+        "tag": "pets",
+        "patterns": ["Do you have any pets?", "Tell me about your pets", "Pets"],
+        "responses": ["I don't have pets, but I'm here to chat with you!", "Pets bring joy to many lives. Do you have any pets?"]
+      },
+      {
+        "tag": "dreams",
+        "patterns": ["What are your dreams?", "Tell me about your dreams", "Do you dream?"],
+        "responses": ["I don't dream, but I'm here to help with your questions and aspirations!", "Dreams can be powerful. What are your dreams and goals?"]
+      },
+      {
+        "tag": "future",
+        "patterns": ["What do you see in the future?", "Tell me about the future", "Future predictions"],
+        "responses": ["I don't have the ability to predict the future, but I'm here for any information you need!", "The future is uncertain, but I'm here to assist you in the present."]
+      },
+      {
+        "tag": "compliment",
+        "patterns": ["Give me a compliment", "Compliment me", "Tell me something nice"],
+        "responses": ["You're amazing just the way you are!", "Your uniqueness is your strength. Keep shining!"]
+      },
+      {
+        "tag": "food",
+        "patterns": ["Favorite food", "Do you eat?", "Tell me about your favorite food"],
+        "responses": ["I don't eat, but I can help you find information about different cuisines!", "Food is a fascinating topic. What's your favorite dish?"]
+      },
+      {
+        "tag": "technology",
+        "patterns": ["Tell me about technology", "Any tech news?", "What's new in tech?"],
+        "responses": ["Technology is advancing rapidly. Is there a specific tech topic you'd like to know more about?", "The world of technology is vast and exciting! What are you curious about?"]
+      },
+      {
+        "tag": "learning",
+        "patterns": ["How can I learn better?", "Any learning tips?", "Tell me about effective learning"],
+        "responses": ["Effective learning involves consistency and curiosity. What subject are you interested in?", "Learning is a lifelong journey. What are you currently studying or exploring?"]
+      },
+      {
+        "tag": "unknown",
+        "patterns": ["*"],
+        "responses": ["I'm sorry, I didn't understand that. Can you please rephrase or ask another question?"]
+      }
+    ]
+  }
