@@ -7,6 +7,10 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
+from gtts import gTTS
+import os
+import time
+import speech_recognition as sr
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -53,7 +57,67 @@ def get_response(intents_list, intents_json):
 print("Hello world")
 
 while True:
+    
+
+    #Remove hashtags to use your Microphone
+    #recognizer = sr.Recognizer()
+
+    
+    #with sr.Microphone() as source:
+        #print("Speak something...")
+        #audio = recognizer.listen(source)
+
+    #try:
+        #print("Recognizing...")
+        
+        #text = recognizer.recognize_google(audio)
+        #print("You said:", text)
+    #except sr.UnknownValueError:
+        #print("Sorry, I couldn't understand what you said.")
+    #except sr.RequestError as e:
+        #print("Could not request results; {0}".format(e))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #If you enable microphone, make sure to change message variable below
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
     print(res)
+    text = res
+    language = "en"
+
+    vout = gTTS(text=text, lang=language, slow=False)
+
+    vout.save("response.mp3")
+    os.system("play response.mp3")
+
+    
+
+
+
